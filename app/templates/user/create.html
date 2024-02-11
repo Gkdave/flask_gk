@@ -1,0 +1,20 @@
+{% extends "user/base.html" %}
+    
+    <title>User Create</title>
+
+
+    {% block head %}
+    
+    {% endblock %}
+    {% block content %}
+    <h1 class="text-2xl mb-4 text:bg-gray-400 text-center">Create User </h1>
+    <form action="/user/" method="post" class="border rounded-md shadow-md p-5 ">
+        <input type="text" name="name" placeholder="Enter Your name" class="border rounded-md p-2">
+        <input type="email" name="email" placeholder="Enter Your Email" class="border rounded-md p-2">
+        <button class="border rounded-md shadow-md p-2 hover:bg-gray-400 hover:text-white" type="submit">Create</button>
+    </form>
+
+    {% endblock %}
+
+        
+        

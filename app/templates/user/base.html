@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://tailwindcss.com">
+</head>
+   
+
+<body>
+   
+    <nav class="py-2 px-6 mt-4  bg-gray-800 text-white border rounded-md">
+        <a class="text-lg mx-4 " href="/">Home</a>
+        <a class="text-lg mx-4 " href="/user/">All_User</a>
+        <a class="text-lg mx-4 " href="/user/create">Create_User</a>
+        
+    </nav>
+<div>
+    <main class="m-20"> 
+    <div class="flex">
+        <div class="w-1/2 m-auto">
+            {% block content %}{% endblock %}
+        
+        </div>
+    </div>
+    </main>
+</div>
+
+
+    
+</body>
+</html>
